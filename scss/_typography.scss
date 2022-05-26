@@ -1,0 +1,22 @@
+body {
+    background-image: url(../images/fon-footer.jpg), url(../images/fon-header.jpg);
+    background-position: bottom, top;
+    background-repeat: repeat-x, repeat-x;
+    background-size: 100%, cover;
+    position: relative;
+    padding: 0 20px 168px;
+    font-family: 'Roboto', sans-serif;
+    @media only screen and (max-width: 480px) {
+        padding: 0 20px 71px;
+    }
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}

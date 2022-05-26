@@ -1,0 +1,62 @@
+.cards {
+    display: flex;
+    flex-flow: row nowrap;
+    @media only screen and (max-width: 480px) {
+        flex-flow: row wrap;
+    }
+}
+.card {
+    width: 33.33%;
+    width: 33.33%;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    transition: all .5s ease;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.card:hover {
+    transform: scale(1.02);
+}
+.card:not(:last-child) {
+    margin-right: 20px;
+    @media only screen and (max-width: 480px) {
+        margin-right: 0;
+    }
+}
+.card__linck {
+    display: block;
+}
+.card__img {
+    width: 100%;
+    min-height: 170px;
+    background-color: #969696;
+    border-radius: 5px 5px 0 0;
+}
+.card__description {
+    background-color: white;
+    padding: 20px 15px 17px 20px;
+    border-radius: 0 0 5px 5px;
+}
+.card:first-child .card__description {
+    padding-right: 20px;
+}
+.card__header {
+    font-family: inherit;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    color: #000000;
+    line-height: .9;//It is my choice
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.card__text {
+    font-family: "Arial";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    hyphens: auto;   
+}
